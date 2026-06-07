@@ -22,11 +22,19 @@ A modern, responsive PHP/MySQL-based website for a physiotherapy rehabilitation 
 - **Review Management**: Moderation-ready testimonial system
 - **Contact Inquiries**: Track customer messages and inquiries
 - **Expert Management**: Dynamic expert profile system with social media links
+- **Admin Panel**: Manage appointments, contact messages, and testimonials from a secured dashboard
 
 ### User Notifications
 - Toast notifications for all user actions (success/error)
 - Real-time feedback on form submissions
 - Auto-dismissing alerts
+
+## 🔐 Admin Panel
+The admin panel is available at `admin/index.php`.
+Default login credentials:
+- Username: `admin`
+- Password: `password`
+
 
 ## 📁 Project Structure
 
