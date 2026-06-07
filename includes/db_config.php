@@ -82,6 +82,15 @@ CREATE TABLE IF NOT EXISTS services (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Admin Users Table
+CREATE TABLE IF NOT EXISTS admin_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(50) DEFAULT 'admin',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Contact Inquiries Table
 CREATE TABLE IF NOT EXISTS contact_inquiries (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -155,5 +164,18 @@ if ($services_count == 0) {
         $stmt->execute();
     }
     $stmt->close();
+}
+
+$check_admin = $conn->query("SELECT COUNT(*) as count FROM admin_users");
+$admin_count = $check_admin->fetch_assoc()['count'];
+
+if ($admin_count == 0) {
+    $password_hash = password_hash('password', PASSWORD_DEFAULT);
+    $stmt = $conn->prepare("INSERT INTO admin_users (username, password_hash, role) VALUES ('admin', ?, 'admin')");
+    if ($stmt) {
+        $stmt->bind_param('s', $password_hash);
+        $stmt->execute();
+        $stmt->close();
+    }
 }
 ?>
