@@ -304,7 +304,7 @@ require_once 'includes/db_config.php';
     </section>
 
     <!-- ============================================
-         FOOTER
+         FOOTERs
          ============================================ -->
     <footer>
         <div class="footer-content">
