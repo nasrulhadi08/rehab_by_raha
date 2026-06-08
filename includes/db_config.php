@@ -121,7 +121,7 @@ $experts_data = array(
     array('Raghib Raza', 'Founder & Director', 'BPT, Founder & Director of REHAB BY RAHA', 
           'I\'m Raghib Raza the Founder & Director of REHAB BY RAHA — a company built with the vision of redefining rehabilitation and healthcare through innovation, technology, and human connection.',
           'Raghib_RBR.jpeg', 'https://www.linkedin.com/in/raghib-raza-275817315', 'https://www.instagram.com/_raghib_raza_'),
-    array('Shivani Upneja', 'Co-Founder & Partner', 'MBA, Co-Founder & Partner',
+    array('Shivani Upneja', 'Co-Founder & Partner', 'BPT, Co-Founder & Partner',
           'Shivani Upneja is the Co-Founder & Partner of REHAB BY RAHA. As a visionary leader, she contributes to building a brand focused on innovation, wellness, and impactful rehabilitation solutions.',
           'Shivani_RBR.jpeg', 'https://www.linkedin.com/in/shivani-upneja-49a6173a5', 'https://www.instagram.com'),
     array('Dr. Abizar Rangwala', 'Senior Physiotherapist', 'PhD Scholar, MPT Orthopedics, Associate Professor',
